@@ -38,7 +38,7 @@ def compute_correlations(name):
     for i in data:
         for e in i['events']:
             if e not in result.keys():
-                result[e]=compute_phi(data,e)
+                result[e]=compute_phi(name,e)
     return result
 
 def diagnose(name):
